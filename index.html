@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрование ГОСТ 28147-89</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Шифрование ГОСТ 28147-89</h1>
+
+        <label for="inputText">Введите текст:</label>
+        <textarea id="inputText" placeholder="Введите текст для шифрования..."></textarea>
+
+        <label for="encryptionKey">Ключ:</label>
+        <input id="encryptionKey" type="text" maxlength="32" placeholder="Введите 32-символьный ключ">
+        <button id="generateKeyButton">Сгенерировать ключ</button>
+
+        <div class="buttons">
+            <button id="encryptButton">Зашифровать</button>
+            <button id="decryptButton">Расшифровать</button>
+            <button id="hashButton">Получить хеш</button>
+            <button id="bruteForceButton">Взломать</button>
+            <button id="resetButton">Сбросить</button>
+        </div>
+
+        <div id="output">
+            <h3>Результаты:</h3>
+            <p><strong>Зашифрованный текст:</strong> <span id="encryptedText"></span></p>
+            <p><strong>Расшифрованный текст:</strong> <span id="decryptedText"></span></p>
+            <p><strong>Хеш:</strong> <span id="hash"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
